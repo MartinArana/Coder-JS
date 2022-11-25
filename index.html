@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>RickandMorty</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="nav_container">
+        <nav class="navbar">
+            <a class="navbar_logo" href="/characters.html">
+                <img src="/img/logo.png" alt="logo">
+            </a>
+            <h1 class="ver_carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad_carrito">
+                </span></h1>
+        </nav>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner_container">
+            <h1 data-aos="zoom-in">Rick and Morty</h1>
+            <p data-aos="zoom-in">La mejor tienda de tu serie favorita</p>
+        </div>
+    </div>
+
+    <!-- Shop content -->
+    <div id="shopContent" class="shop_content"></div>
+
+    <!-- Modal Container -->
+    <div id="modalContainer" class="modal_container"></div>
+
+    <!-- Boton arriba -->
+    <button id="arriba" class="arriba">
+        <i class="fa-regular fa-circle-up"></i>
+    </button>
+
+    <!-- inicia footer -->
+
+    <footer>
+        <div class="container_footer">
+            <div class="box_footer">
+                <div class="logo">
+                    <a href="/characters.html">
+                        <img src="/img/footer.png" alt="LOGO" />
+                    </a>
+                </div>
+                <div class="terms"></div>
+            </div>
+            <div class="box_footer">
+                <h2>NOSOTROS</h2>
+                <a href="#">Quienes somos?</a>
+                <a href="#">Nuestras sucursales</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Contacto</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>INFORMACION</h2>
+                <a href="#">Servicios</a>
+                <a href="#">Delivery</a>
+                <a href="#">Promociones</a>
+                <a href="#">Terminos y condiciones</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>REDES SOCIALES</h2>
+                <a href="#"><i class="fab fa-brands fa-facebook-square"></i>Facebook</a>
+                <a href="#"><i class="fab fa-brands fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-solid fa-envelope"></i>Mensajes</a>
+                <a href="#"><i class="fab fa-solid fa-mobile-button"></i>WhatsApp</a>
+            </div>
+        </div>
+        <div class="box_copy">
+            <hr />
+            <p>Todos los derechos reservados 2022 <b>RickandMorty®</b></p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="./js/products.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="http://tholman.com/elevator.js/elevator.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
